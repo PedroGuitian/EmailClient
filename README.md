@@ -30,13 +30,11 @@ A full-featured single-page email web application. Built for Harvard CS50 Web Pr
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-
-# Install requirements
-pip install -r requirements.txt
+git clone https://github.com/PedroGuitian/EmailClient.git
+cd EmailClient
 
 # Run migrations
+python manage.py makemigrations
 python manage.py migrate
 
 # Start server
