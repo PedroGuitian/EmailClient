@@ -138,7 +138,7 @@ function load_email(id) {
         compose_email();
         document.querySelector('#compose-recipients').value = email.sender;
         document.querySelector('#compose-subject').value = email.subject.startsWith('Re:') ? email.subject : 'Re: ' + email.subject;
-        document.querySelector('#compose-body').value = `On ${email.timestamp}, ${email.sender} wrote:\n${email.body}\n\n`;
+        document.querySelector('#compose-body').value = `On ${email.timestamp}, ${email.sender} wrote:\n${email.body}\n\n${'-'.repeat(50)}\n\n\n`;
       });
 
       fetch(`/emails/${id}`, {
